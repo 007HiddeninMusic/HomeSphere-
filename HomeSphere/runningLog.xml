@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<household householdId="1" address="友谊西路127号">
+  <rooms>
+    <room roomId="1" roomName="客厅">
+      <devices>
+        <device deviceId="1205" deviceName="客厅空调">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="空调已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="空调已关机" />
+          </runningLogs>
+        </device>
+        <device deviceId="2876" deviceName="客厅吸顶灯">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="灯泡已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="设置亮度" type="INFO" note="亮度设置为20%" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="设置色温" type="INFO" note="色温设置为3000K" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="灯泡已关机" />
+          </runningLogs>
+        </device>
+        <device deviceId="2278" deviceName="智能门锁">
+          <runningLogs>
+          </runningLogs>
+        </device>
+      </devices>
+    </room>
+    <room roomId="2" roomName="主卧">
+      <devices>
+        <device deviceId="2929" deviceName="主卧空调">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="空调已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="空调已关机" />
+          </runningLogs>
+        </device>
+        <device deviceId="8561" deviceName="主卧灯">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="灯泡已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="灯泡已关机" />
+          </runningLogs>
+        </device>
+      </devices>
+    </room>
+    <room roomId="3" roomName="次卧">
+      <devices>
+        <device deviceId="2214" deviceName="次卧空调">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="空调已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="空调已关机" />
+          </runningLogs>
+        </device>
+        <device deviceId="1637" deviceName="次卧灯">
+          <runningLogs>
+            <runningLog dateTime="2025-11-09 20:24:13" event="开机" type="INFO" note="灯泡已开机" />
+            <runningLog dateTime="2025-11-09 20:24:13" event="关机" type="INFO" note="灯泡已关机" />
+          </runningLogs>
+        </device>
+      </devices>
+    </room>
+  </rooms>
+</household>

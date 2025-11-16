@@ -1,0 +1,17 @@
+Household{householdId=1, address='友谊西路127号', adminId=1}
+Room{roomId=1, name='客厅', area=25.5}
+Room{roomId=2, name='主卧', area=18.0}
+Room{roomId=3, name='次卧', area=16.2}
+User{userId=1, username='admin', email='admin@nwpu.edu.cn', isAdmin=true}
+Manufacturer{manufacturerId=1, name='米家智能家居有限公司', protocols=ZigBee}
+Manufacturer{manufacturerId=2, name='格林智能家居设备制造厂', protocols=WiFi}
+AirConditioner{deviceId=1205, name='客厅空调', manufacturerId=1, currTemp=26.0, targetTemp=26.0, roomId=1}
+AirConditioner{deviceId=2929, name='主卧空调', manufacturerId=2, currTemp=26.0, targetTemp=26.0, roomId=2}
+AirConditioner{deviceId=2214, name='次卧空调', manufacturerId=2, currTemp=26.0, targetTemp=26.0, roomId=3}
+LightBulb{deviceId=2876, name='客厅吸顶灯', manufacturerId=1, brightness=100, colorTemp=5300, roomId=1}
+LightBulb{deviceId=8561, name='主卧灯', manufacturerId=1, brightness=100, colorTemp=5300, roomId=2}
+LightBulb{deviceId=1637, name='次卧灯', manufacturerId=1, brightness=100, colorTemp=5300, roomId=3}
+SmartLock{deviceId=2278, name='智能门锁', manufacturerId=2, isLocked=false, batteryLevel=100, roomId=1}
+AutomationScene{sceneId=1, name='早安模式', description='开启卧室灯光并设置舒适温度', actions=[DeviceAction{command='powerOn', parameters='', deviceId=8561}, DeviceAction{command='powerOn', parameters='', deviceId=1637}, DeviceAction{command='powerOn', parameters='', deviceId=2929}, DeviceAction{command='setTemperature', parameters='26.0', deviceId=2929}, DeviceAction{command='powerOn', parameters='', deviceId=2214}, DeviceAction{command='setTemperature', parameters='26.0', deviceId=2214}]}
+AutomationScene{sceneId=3, name='影院模式', description='降低客厅灯光，开启客厅空调设置凉爽温度', actions=[DeviceAction{command='powerOn', parameters='', deviceId=2876}, DeviceAction{command='setBrightness', parameters='20', deviceId=2876}, DeviceAction{command='setColorTemp', parameters='3000', deviceId=2876}, DeviceAction{command='powerOn', parameters='', deviceId=1205}, DeviceAction{command='setTemperature', parameters='26.0', deviceId=1205}]}
+AutomationScene{sceneId=2, name='离家模式', description='关闭所有设备，门锁上锁', actions=[DeviceAction{command='powerOff', parameters='', deviceId=2876}, DeviceAction{command='powerOff', parameters='', deviceId=8561}, DeviceAction{command='powerOff', parameters='', deviceId=1637}, DeviceAction{command='powerOff', parameters='', deviceId=1205}, DeviceAction{command='powerOff', parameters='', deviceId=2929}, DeviceAction{command='powerOff', parameters='', deviceId=2214}, DeviceAction{command='setLocked', parameters='true', deviceId=2278}]}
